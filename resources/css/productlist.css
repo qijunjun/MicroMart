@@ -1,0 +1,122 @@
+/*头部样式*/
+.header{
+    width:100%;
+    height:50px;
+    position: fixed;
+    left:0;
+    top:0;
+    z-index: 99999;
+    background: #fff;
+    border-bottom: 1px solid #ccc;
+}
+.header ul{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.header ul li{
+    width:50px;
+    height:50px;
+    overflow: hidden;
+}
+.header ul li a{
+    height:50px;
+    display: block;
+}
+.header ul li:nth-child(1) a{
+    background: url("../images/icon.png") 0 -46px no-repeat;
+    background-size: 214px auto;
+}
+.header ul li:nth-child(4) a{
+    background: url("../images/icon.png") -101px 0 no-repeat;
+    background-size: 214px auto;
+}
+.header ul li:nth-child(2) a{
+    background: url("../images/icon.png") -161px -46px no-repeat;
+    background-size: 214px auto;
+}
+.header ul li:nth-child(3) a{
+    background: url("../images/icon.png") -51px -46px no-repeat;
+    background-size: 214px auto;
+}
+article{
+    background: rgba(203,203,203,0.4);
+    padding:1px 5px 15px;
+    margin-top: 51px;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    color: #737373;
+}
+article section{
+    margin-top:10px;
+    background: #fff;
+    height:122px;
+    box-shadow: 0 0 1px 1px rgba(202, 202, 202, 0.7)
+}
+article section .left{
+    width:30%;
+    position: relative;
+}
+article section .left .title{
+    width: 0;
+    height: 0;
+    color: #fff;
+    border-width: 0 0 60px 60px;
+    border-style:solid;
+    border-color:transparent transparent transparent #1aa818;/*透明 透明 透明 绿*/
+    position: relative;
+    left:0;
+    top:0;
+    z-index: 990;
+}
+article section:nth-child(1) .left .title{
+    border-color:transparent transparent transparent #1aa818;/*透明 透明 透明 绿*/
+}
+article section:nth-child(2) .left .title{
+    border-color:transparent transparent transparent #b9260c;/*透明 透明 透明 绿*/
+}
+article section:nth-child(3) .left .title{
+    border-color:transparent transparent transparent #d58806;/*透明 透明 透明 绿*/
+}
+article section:nth-child(4) .left .title{
+    border-color:transparent transparent transparent #66b906;/*透明 透明 透明 绿*/
+}
+article section .left span{
+    padding: 3px;
+    position: absolute;
+    left:-60px;
+    top:5px;
+    z-index: 999;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+}
+article section .left canvas{
+    width:100%;
+    height:110px;
+    position: absolute;
+    left:0;
+    top:0;
+    background: #fff url("../images/loading.gif") center center no-repeat;
+    background-size: 15px auto;
+}
+article section .right{
+    margin-left:20px;
+    margin-top:15px;
+}
+article section .right h3{
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+article section .right .price{
+    margin-top:15px;
+}
+article section .right .price .newprice{
+    color:#87cc09;
+}
+article section .right .price .oldprice{
+    text-decoration: line-through;
+}

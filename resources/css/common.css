@@ -1,0 +1,195 @@
+/*头部样式*/
+.header{
+    width:100%;
+    height:50px;
+    position: fixed;
+    left:0;
+    top:0;
+    z-index: 99999;
+    border-bottom: 1px solid #ccc;
+    background: #fff;
+}
+.header ul{
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.header ul li{
+    width:50px;
+    height:50px;
+    overflow: hidden;
+}
+.header ul li a{
+    height:50px;
+    display: block;
+}
+.header ul li:nth-child(1) a{
+    background: url("../images/icon.png") 0 0 no-repeat;
+    background-size: 214px auto;
+}
+.header ul li:nth-child(4) a{
+    background: url("../images/icon.png") -101px -46px no-repeat;
+    background-size: 214px auto;
+}
+.header ul li:nth-child(2) a{
+    background: url("../images/icon.png") -161px -46px no-repeat;
+    background-size: 214px auto;
+}
+.header ul li:nth-child(3) a{
+    background: url("../images/icon.png") -51px -46px no-repeat;
+    background-size: 214px auto;
+}
+/*幻灯片样式*/
+.slide{
+    position: relative;
+    margin:51px 5px 0;
+}
+.slide img{
+    width:100%;
+    height:200px;
+    display: block;
+}
+.slide .slide-title{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height:60px;
+    background: rgba(1, 1, 1, 0.85);
+    color:#fff;
+}
+.slide .slide-title .float_left{
+    width:70%;
+    padding: 10px 0;
+    text-indent: 12px;
+}
+.slide .slide-title .float_left p span{
+    color: #87cc09;
+}
+.slide .slide-title .float_left p.info{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    word-break: break-all;
+    white-space: nowrap;
+    font-size: 13px;
+    margin-top: 5px;
+}
+.slide .slide-title .float_right{
+    width: 30%;
+    margin-top: 15px;
+    text-align: center;
+}
+.slide .slide-title .float_right a{
+    display: inline-block;
+    background: #87cc09;
+    color: #fff;
+    padding:5px 10px;
+    border-radius: 5px;
+}
+article{
+    background: rgba(203,203,203,0.4);
+    padding:1px 5px;
+    font-size: 14px;
+    font-family: "微软雅黑";
+    color: #737373;
+}
+article section{
+    margin-top:10px;
+    background: #fff;
+    height:122px;
+}
+article section .left{
+    width:30%;
+    position: relative;
+}
+article section .left .title{
+    width: 0;
+    height: 0;
+    color: #fff;
+    border-width: 0 0 60px 60px;
+    border-style:solid;
+    position: relative;
+    left:0;
+    top:0;
+    z-index: 990;
+}
+/*article section .left .title{*/
+/*width: 0;*/
+/*height: 0;*/
+/*color: #fff;*/
+/*border-top:60px solid #1aa818;*/
+/*border-right:60px solid transparent;*/
+/*!*border-style:solid;*!*/
+/*position: relative;*/
+/*left:0;*/
+/*top:0;*/
+/*z-index: 990;*/
+/*}
+article section .left span{
+    padding: 3px;
+    position: absolute;
+    left:10px;
+    top:-60px;
+    z-index: 999;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    -moz-transform: rotate(-135deg);
+}
+article section:nth-child(2) .left .title{
+    border-top:60px solid #b9260c;
+/*}
+*/
+article section:nth-child(1) .left .title{
+    border-color:transparent transparent transparent #1aa818;/*透明 透明 透明 绿*/
+}
+article section:nth-child(2) .left .title{
+    border-color:transparent transparent transparent #b9260c;/*透明 透明 透明 绿*/
+}
+article section:nth-child(3) .left .title{
+    border-color:transparent transparent transparent #d58806;/*透明 透明 透明 绿*/
+}
+article section:nth-child(4) .left .title{
+    border-color:transparent transparent transparent #66b906;/*透明 透明 透明 绿*/
+}
+article section .left span{
+    padding: 3px;
+    position: absolute;
+    left:-60px;
+    top:5px;
+    z-index: 999;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+}
+article section .left img{
+    width:100%;
+    position: absolute;
+    left:0;
+    top:0;
+}
+article section .left canvas{
+    width:100%;
+    background: #fff;
+    height:110px;
+}
+article section .right{
+    margin-left:20px;
+    margin-top:15px;
+}
+article section .right h3{
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 5px;
+}
+article section .right .price{
+    margin-top:15px;
+}
+article section .right .price .newprice{
+    color:#87cc09;
+}
+article section .right .price .oldprice{
+    text-decoration: line-through;
+}

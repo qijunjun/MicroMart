@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>Title</title>
+    <link rel="icon" href="resources/images/haoroomsicon.jpg">
+    <link rel="apple-touch-icon-precomposed" href="resources/images/haoroomsicon.jpg">
+    <link rel="apple-touch-startup-image" href="resources/images/haoroomsicon.jpg">
+    <link rel="stylesheet" href="resources/css/reset.css">
+    <link rel="stylesheet" href="resources/css/swiper.min.css">
+    <link rel="stylesheet" href="resources/css/addCart.css">
+</head>
+<body>
+<header class="header">
+    <ul>
+        <li><a href="index.html"></a></li>
+        <li><a href="javascript:void(0)"></a></li>
+        <li id="n-1">
+            <a href="javascript:void(0)"></a>
+            <b class="cartNum hide" id="cartNum"></b>
+        </li>
+        <li class="active"><a href="javascript:void(0)"></a></li>
+    </ul>
+</header>
+<article>
+    <section>
+        <div class="top clearfix">
+            <div class="float_left" id="productimg">
+                <img src="resources/images/product1.png" alt="">
+            </div>
+            <div class="float_left">
+                <h3>变更算量——端午.微信专享版</h3>
+                <p>简介在这里简介在这里简介在这里简介在这里简介在这里简介在这里简介在这里</p>
+                <p class="price">专享价：&yen;5800</p>
+            </div>
+        </div>
+        <div class="num clearfix">
+            <div class="float_left">数量:</div>
+            <div class="float_left">
+                <div id="reduce" class="reduce"></div>
+                <input type="text" id="num" value="1">
+                <div class="add" id="add"></div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="content">
+            <h3>详情说明</h3>
+            <ul>
+                <li>本次活动有效期2017年8月10日-2017年9月10日</li>
+                <li>专享价只能通过微信订购支付</li>
+                <li>活动结束后，专享价格自动失效</li>
+            </ul>
+            <img src="resources/images/product1.png" alt="">
+        </div>
+        <button id="addBtn">加入购物车</button>
+    </section>
+</article>
+</body>
+<script src="resources/js/libs/jquery.js"></script>
+<script src="resources/js/views/addCart.js"></script>
+</html>
