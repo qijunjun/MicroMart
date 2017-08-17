@@ -8,15 +8,16 @@ body{
     position: fixed;
     left:0;
     top:0;
-    z-index: 999;
-    background: #fff;
+    z-index: 99999;
     border-bottom: 1px solid #ccc;
+    background: #fafafa;
 }
 .header ul{
     width: 95%;
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    border-bottom: solid 1px #B3B3B3;
 }
 .header ul li{
     width:50px;
@@ -67,7 +68,7 @@ body{
     height: 50px;
     padding: 2px;
     background: #fff;
-    border: solid 5px #e54144;
+    border: solid 2px #e54144;
     overflow: hidden;
     position: absolute;
     z-index: 9999;
@@ -113,31 +114,43 @@ section .num{
     border-top:1px solid #ccc;
     padding-left:30px;
 }
+section .num div:nth-child(2){
+    margin-top:13px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    margin-left:15px;
+}
 section .num div:nth-child(2) div{
     width:35px;
     height:24px;
     border:1px solid #ccc;
     float: left;
-    margin-top:13px;
     cursor: pointer;
+    border-radius:5px;
+    margin-left:15px;
  }
 section .num div:nth-child(2) .reduce{
-    margin-left: 15px;
     background: url("../images/reduce.gif") center center no-repeat;
+    margin-left:0;
+    border:0;
 }
 section .num div:nth-child(2) .add{
+    margin-left:0;
+    border:0;
     background: url("../images/add.gif") center center no-repeat;
 }
 section .num div:nth-child(2) input{
     width:60px;
     height:24px;
+    color:#990000;
+    font-weight: 800;
     float: left;
-    margin-top:13px;
     text-align: center;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-    border-left:0;
-    border-right: 0;
+    margin-top: 0;
+    border-bottom: 0;
+    border-top:0;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
 }
 section .num span,section .num b{
     text-align: center;
@@ -177,7 +190,7 @@ section .content ul li{
 section .content img{
     width:100%;
 }
-section button{
+section button.addBtn{
     width:100%;
     height:40px;
     line-height: 40px;

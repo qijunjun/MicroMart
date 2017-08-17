@@ -49,3 +49,9 @@ img{
     /*兼容ie解决清除浮动*/
     zoom:1;
 }
+.indent12{
+    text-indent: 12px;
+}
+.inline-block{
+    display: inline-block;
+}

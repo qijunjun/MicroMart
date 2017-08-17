@@ -2,27 +2,25 @@
  * Created by 123 on 2017/8/16.
  */
 $(function () {
-    var num=0;
-    var oNum =$("#num");
     var oCartNum = $("#cartNum");
     if(oCartNum.html()){
         oCartNum.removeClass("hide");
     }
-   $("#add").click(function(){
-       if(isNaN(parseInt(oNum.val())) || oNum.val()<0){
-           oNum.val(1);
+   $(".add").click(function(){
+       if(isNaN(parseInt($(this).prev().val())) || $(this).prev().val()<1){
+           $(this).prev().val(1);
            return false;
        }
-       num=parseInt(oNum.val())+1;
-       oNum.val(num);
+       var num=parseInt($(this).prev().val())+1;
+       $(this).prev().val(num);
    });
-    $("#reduce").click(function(){
-        if(isNaN(parseInt(oNum.val())) || num<1){
-            oNum.val(1);
+    $(".reduce").click(function(){
+        if(isNaN(parseInt($(this).next().val())) || $(this).next().val()<2){
+            $(this).next().val(1);
             return false;
         }
-        num=parseInt(oNum.val())-1;
-        oNum.val(num);
+        var num=parseInt($(this).next().val())-1;
+        $(this).next().val(num);
     });
     $("#addBtn").click(function(){
         if(!oCartNum.html()){
@@ -39,15 +37,26 @@ $(function () {
         }
         var $obj=$('#flydiv');
         if(!$obj.is(':animated')){
-            $obj.css({'left': x,'top': y}).animate({'left': X,'top': Y-80},500,function() {
-                $obj.stop(false, false).animate({'top': Y-20,'opacity':0},500,function(){
+            $obj.css({'left': x,'top': y}).animate({'left': X,'top': Y-80},800,function() {
+                $obj.stop(false, false).animate({'top': Y-20,'opacity':0},800,function(){
                     $obj.fadeOut(300,function(){
                         $obj.remove();
                         oCartNum.removeClass("hide");
-                        oCartNum.html(parseInt(oNum.val()) + parseInt(oCartNum.html()));
+                        oCartNum.html(parseInt($("#num").val()) + parseInt(oCartNum.html()));
                     });
                 });
             });
+        }
+    });
+    $(".del").click(function(){
+       $("#list").hide(); 
+       $("#null").show();
+        $(this).parent().hide();
+    });
+    $(".delete").click(function(){
+       $(this).parent().parent().hide().addClass("hide");
+        if($("#list .hide").length==4){
+            $("#null").show();
         }
     });
     // 阻止事件冒泡

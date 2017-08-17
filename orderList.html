@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>Title</title>
+    <link rel="icon" href="resources/images/haoroomsicon.jpg">
+    <link rel="apple-touch-icon-precomposed" href="resources/images/haoroomsicon.jpg">
+    <link rel="apple-touch-startup-image" href="resources/images/haoroomsicon.jpg">
+    <link rel="stylesheet" href="resources/css/reset.css">
+    <link rel="stylesheet" href="resources/css/swiper.min.css">
+    <link rel="stylesheet" href="resources/css/header.css">
+    <link rel="stylesheet" href="resources/css/orderList.css">
+</head>
+<body>
+<header class="header">
+    <ul>
+        <li><a href="index.html"></a></li>
+        <li><a href="javascript:void(0)"></a></li>
+        <li><a href="cart.html"></a></li>
+        <li><a href="productList.html"></a></li>
+    </ul>
+</header>
+<article>
+    <button class="btn">管理收货地址</button>
+    <section class="addresslist">
+        <h3>收货人地址</h3>
+        <ul>
+            <li>
+                <div class="clearfix">
+                    <input type="radio" name="address" id="address0" class="active">
+                    <label for="address0">上海市 虹口区 临潼路255号 上海兴安得力软件有限公司</label>
+                </div>
+                <p>
+                    <span>姓名：张某某</span>
+                    <span>手机号码：13566666666666</span>
+                </p>
+            </li>
+            <li>
+                <div class="clearfix">
+                    <input type="radio"  name="address" id="address1">
+                    <label for="address1">上海市 虹口区 临潼路255号 上海兴安得力软件有限公司</label>
+                </div>
+                <p>
+                    <span>姓名：张某某</span>
+                    <span>手机号码：13566666666666</span>
+                </p>
+            </li>
+            <li>
+                <div class="clearfix">
+                    <input type="radio" name="address" id="address2">
+                    <label for="address2">上海市 虹口区 临潼路255号 上海兴安得力软件有限公司</label>
+                </div>
+                <p>
+                    <span>姓名：张某某</span>
+                    <span>手机号码：13566666666666</span>
+                </p>
+            </li>
+            <li>
+                <div class="clearfix" id="newAddress">
+                    <input type="radio" name="address" id="add">
+                    <label for="add">使用新的收货地址</label>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="name">收货人姓名：</label>
+                        <input type="text" id="name">
+                    </div>
+                    <div class="form-group">
+                        <label for="city">所在区域：</label>
+                        <select name="province" id="province"></select>
+                        <select name="city" id="city"></select>
+                        <select name="xian" id="xian"></select>
+                    </div>
+                    <div class="form-group">
+                        <label for="addressDetial">详细地址：</label>
+                        <input type="text" id="addressDetial">
+                    </div>
+                    <div class="form-group">
+                        <label for="tel">手机号码：</label>
+                        <input type="tel" id="tel">
+                    </div>
+                    <div class="form-group clearfix">
+                        <label class="save">
+                            <input value="1" id="save_address" name="save_address" type="checkbox">&nbsp;自动保存收货地址
+                            <span class="explain">&nbsp;(&nbsp;选择后该地址将会保存到您的收货地址列表&nbsp;)&nbsp;</span>
+                        </label>
+                    </div>
+                </form>
+            </li>
+        </ul>
+    </section>
+    <section class="voiceslist">
+        <h3>发票信息</h3>
+        <ul>
+            <li class="clearfix">
+                <p class="clearfix" id="fapiao">
+                    <input type="checkbox"  id="piao">
+                    <label for="piao" class="indent12 inline-block">是否开发票</label>
+                </p>
+                <form>
+                    <div class="form-group">
+                        <label for="piaoType">发票类型：</label>
+                        <select name="piaoType" id="piaoType">
+                            <option value="0" selected>普通发票</option>
+                            <option value="1">增值税发票</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="tai">发票抬头：</label>
+                        <select name="tai" class="tai" id="tai">
+                            <option value="0" selected>个人</option>
+                            <option value="1">单位</option>
+                        </select>
+                        <input type="text" class="tai">
+                    </div>
+                </form>
+            </li>
+        </ul>
+    </section>
+    <section class="productlist">
+        <h3>商品清单</h3>
+        <table class="productTable">
+            <tr>
+                <td>商品名称</td>
+                <td>数量</td>
+                <td>小计</td>
+            </tr>
+            <tr>
+                <td>苹果</td>
+                <td>12</td>
+                <td>200</td>
+            </tr>
+            <tr>
+                <td>桃子</td>
+                <td>2</td>
+                <td>12</td>
+            </tr>
+            <tr>
+                <td>桃子</td>
+                <td>2</td>
+                <td>12</td>
+            </tr>
+        </table>
+    </section>
+    <section class="message">
+        <h3>给卖家留言</h3>
+        <textarea name="meaasge" id="message" class="addmessage"></textarea>
+    </section>
+</article>
+<footer class="clearfix">
+    <a class="sumPrice">总价：<b>&yen;20000</b></a>
+    <a class="sum">提交订单</a>
+</footer>
+</body>
+<script src="resources/js/libs/jquery.js"></script>
+<script src="resources/js/views/area.js"></script>
+<script src="resources/js/views/orderList.js"></script>
+</html>

@@ -1,0 +1,178 @@
+.header ul li:nth-child(1) a{
+    background: url("../images/icon.png") 0 -46px no-repeat;
+    background-size: 214px auto;
+}
+.header ul li:nth-child(3) a{
+    background: url("../images/icon.png") -51px 0 no-repeat;
+    background-size: 214px auto;
+}
+article{
+    background:#e9e9e9;
+    color:#444;
+    min-height: 300px;
+    margin-top:51px;
+    padding-top:1px;
+    padding-bottom:20px;
+    margin-bottom:50px;
+}
+article .btn{
+    width:100%;
+    border:0;
+    color:#fff;
+    padding:10px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    display: block;
+    margin-top:15px;
+    background: linear-gradient(#1aa818,#87cc09);
+}
+article section{
+    width:90%;
+    margin:10px auto 0;
+    background:#fff;
+    box-shadow: 0 0 1px 1px #ccc;
+    border-radius:5px;
+    padding:5px;
+}
+article section h3{
+    font-size:18px;
+    padding-left:15px;
+}
+article section ul{
+    margin:10px;
+}
+article section ul li{
+    margin-top:10px;
+    padding-bottom:5px;
+    border-bottom: 1px dashed #ccc;
+}
+article section ul li p{
+    text-indent: 24px;
+    margin-top:5px;
+}
+article section ul li input[type="radio"],article section ul  li #fapiao input[type="checkbox"]{
+    width:16px;
+    -webkit-appearance: none;
+    outline: none;
+    border:1px solid #ccc;
+    height:16px;
+    line-height: 16px;
+    border-radius: 10px;
+    margin-top:3px;
+    float: left;
+}
+article section ul li input[type="radio"].active,article section ul li #fapiao input[type="checkbox"].active{
+    border:5px solid #0e90d2;
+    width:16px;
+    height:16px;
+    border-radius: 10px;
+}
+article section ul li div label{
+    width:90%;
+    text-indent: 12px;
+    float: left;
+}
+article section ul li:last-child{
+    border-bottom: none;
+}
+article section ul li form{
+    margin:20px 0;
+    padding:15px;
+    background:#f2f2f2;
+    display: none;
+}
+article form .form-group:first-child{
+    margin-top:0;
+}
+article form .form-group{
+    margin-top:10px;
+}
+article form .form-group label{
+    display: block;
+    text-indent: 0;
+}
+article form .form-group label.save{
+    width:100%;
+}
+article form .form-group input[type="text"],article form .form-group input[type="tel"]{
+    width:100%;
+    height:36px;
+    line-height: 36px;
+    border:1px solid #ccc;
+    outline: none;
+    text-indent: 12px;
+    border-radius: 5px;
+    margin-top:8px;
+}
+article form .form-group select{
+    width:30%;
+    height:36px;
+    line-height: 36px;
+    border:1px solid #ccc;
+    outline: none;
+    border-radius: 5px;
+    margin-top:8px;
+}
+article section.voiceslist .form-group select{
+    width:100%;
+    text-align: center;
+}
+article section.voiceslist .form-group .tai{
+    width:40%;
+}
+article section .productTable{
+    width:90%;
+    margin: 10px auto;
+    text-align: center;
+    border-collapse: collapse;
+}
+article section .productTable tr:first-child{
+    background: #eeeeee;
+}
+article section .productTable tr td{
+    border:1px solid #ccc;
+    padding:10px 0;
+
+}
+article section .addmessage{
+    width:90%;
+    height:56px;
+    line-height: 56px;
+    margin: 8px auto;
+    border:1px solid #ccc;
+    outline: none;
+    border-radius: 5px;
+    display: block;
+    resize: none;
+}
+.show{
+    display: block;
+}
+footer{
+    width: 100%;
+    position: fixed;
+    bottom:0;
+    left:0;
+    background: #f4f4f4;
+    border-top: 1px solid #B3B3B3;
+}
+footer a{
+    float: left;
+    padding:15px;
+}
+footer a.sumPrice{
+    margin-left:15px;
+}
+footer a.sumPrice b{
+    color:#1aa818;
+}
+footer a.sum{
+    margin:10px;
+    float: right;
+    padding:5px 20px;
+    color: #fff;
+    background: #1aa818;
+    border-radius: 5px;
+}
+
