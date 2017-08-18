@@ -7,7 +7,7 @@
     <meta name="apple-touch-fullscreen" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="format-detection" content="telephone=no">
-    <title>Title</title>
+    <title>新智达微商城</title>
     <link rel="icon" href="resources/images/haoroomsicon.jpg">
     <link rel="apple-touch-icon-precomposed" href="resources/images/haoroomsicon.jpg">
     <link rel="apple-touch-startup-image" href="resources/images/haoroomsicon.jpg">
@@ -73,8 +73,12 @@
                     <div class="form-group">
                         <label for="city">所在区域：</label>
                         <select name="province" id="province"></select>
-                        <select name="city" id="city"></select>
-                        <select name="xian" id="xian"></select>
+                        <select name="city" id="city">
+                            <option value="0" disabled="disabled" selected>--请选择城市--</option>
+                        </select>
+                        <select name="xian" id="xian">
+                            <option value="0" disabled="disabled" selected>--请选择地区--</option>
+                        </select>
                     </div>
                     <div class="form-group">
                         <label for="addressDetial">详细地址：</label>
