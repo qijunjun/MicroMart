@@ -1,0 +1,96 @@
+.header ul li:nth-child(1) a{
+    background: url("../images/icon.png") 0 -46px no-repeat;
+    background-size: 214px auto;
+}
+.header ul li:nth-child(3) a{
+    background: url("../images/icon.png") -51px 0 no-repeat;
+    background-size: 214px auto;
+}
+article{
+    background: #f6f6f6;
+    color:#444;
+    min-height: 300px;
+    padding:50px 0 60px;
+}
+article section{
+    width:90%;
+    margin:10px auto 0;
+    background:#fff;
+    box-shadow: 0 0 1px 1px #ccc;
+    border-radius:5px;
+    padding:5px;
+}
+article section  form{
+    padding:15px;
+}
+article form .form-group:first-child{
+    margin-top:0;
+}
+article form .form-group{
+    margin-top:10px;
+}
+article form select,article form input{
+    height:36px;
+    line-height: 36px;
+    border:1px solid #ccc;
+    outline: none;
+    border-radius: 5px;
+}
+article form .form-group input{
+    width:100%;
+    text-indent: 12px;
+}
+article form .form-group select{
+    width:32%;
+}
+article form  .btn{
+    width:100%;
+    border:0;
+    color:#fff;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 5px;
+    display: block;
+    margin-top:15px;
+    background: linear-gradient(#1aa818,#87cc09);
+}
+article section.add-address{
+    padding:5px 0 0;
+}
+article section > p{
+    margin-top:10px;
+    text-indent: 20px;
+}
+article section span.error{
+    margin-top:10px;
+    margin-bottom: 5px;
+    display: none;
+    color:#ff0000;
+    text-indent: 15px;
+}
+article section span.hide{
+    display: none;
+}
+article section > div{
+    border-top: 1px solid #ccc;
+    height:36px;
+    margin-top:10px;
+}
+article section >div a{
+    width: 49%;
+    height:36px;
+    line-height: 36px;
+    display: inline-block;
+    text-align: center;
+    text-indent: 50px;
+}
+article section > div a.edit{
+    background: url("../images/edit.png") center center no-repeat;
+    background-size: 20px;
+}
+article section > div a.del{
+    border-left: 1px solid #ccc;
+    background: url("../images/del.png") center center no-repeat;
+    background-size: 20px;
+}
+

@@ -41,7 +41,7 @@
     background-size: 214px auto;
 }
 article.list{
-    margin-top:50px;
+    padding:50px 15px 60px;
 }
 article.list section{
     margin-top:15px;
@@ -108,9 +108,6 @@ section .total .delete{
     background: url("../images/del.png") center center no-repeat;
     background-size: 20px;
     margin-left:15px;
-}
-article section:last-child{
-    margin-bottom:50px;
 }
 .hide{
     display: none;

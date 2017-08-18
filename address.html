@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>新智达微商城</title>
+    <link rel="icon" href="resources/images/haoroomsicon.jpg">
+    <link rel="apple-touch-icon-precomposed" href="resources/images/haoroomsicon.jpg">
+    <link rel="apple-touch-startup-image" href="resources/images/haoroomsicon.jpg">
+    <link rel="stylesheet" href="resources/css/reset.css">
+    <link rel="stylesheet" href="resources/css/swiper.min.css">
+    <link rel="stylesheet" href="resources/css/header.css">
+    <link rel="stylesheet" href="resources/css/address.css">
+</head>
+<body>
+<header class="header">
+    <ul>
+        <li><a href="index.html"></a></li>
+        <li><a href="javascript:void(0)"></a></li>
+        <li><a href="cart.html"></a></li>
+        <li><a href="productList.html"></a></li>
+    </ul>
+</header>
+<article>
+    <section class="addresslist">
+        <form>
+            <div class="form-group">
+                <input type="text" id="username" placeholder="请填写你的真实姓名">
+                <span class="error">姓名不能为空</span>
+            </div>
+            <div class="form-group">
+                <label for="city"></label>
+                <select name="province" id="province"></select>
+                <select name="city" id="city">
+                    <option value="0" disabled="disabled" selected>--请选择城市--</option>
+                </select>
+                <select name="xian" id="xian">
+                    <option value="0" disabled="disabled" selected>--请选择地区--</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="text" id="addressDetial" placeholder="详细地址(不必重复填写地区)">
+                <span class="error">详细地址不能为空!</span>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="tel" placeholder="手机或者电话">
+                <span class="error">手机或者电话不能为空!</span>
+            </div>
+            <input class="btn save" type="button" value="保存">
+        </form>
+    </section>
+    <section class="add-address">
+        <p>
+            <span class="name">张三</span>
+            <span>(<b class="tel">15788888888888</b>)</span>
+        </p>
+        <p>
+            <span class="province">河南省</span>
+            <span class="city">郑州市</span>
+            <span class="district">金水区</span>
+            <span class="detailAddress">花园路108号</span>
+        </p>
+        <div>
+            <a class="edit">编辑</a>
+            <a class="del">删除</a>
+        </div>
+    </section>
+</article>
+</body>
+<script src="resources/js/libs/jquery.js"></script>
+<script src="resources/js/views/area.js"></script>
+<script src="resources/js/views/method.js"></script>
+<script src="resources/js/views/address.js"></script>
+</html>

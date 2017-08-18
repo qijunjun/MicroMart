@@ -1,0 +1,54 @@
+body{
+    background: #f6f6f6;
+}
+.header ul li:nth-child(1) a{
+    background: url("../images/icon.png") 0 -46px no-repeat;
+    background-size: 214px auto;
+}
+.header ul li:nth-child(2) a{
+    background: url("../images/icon.png") -161px 0 no-repeat;
+    background-size: 214px auto;
+}
+article{
+    background:#f6f6f6;;
+    color:#444;
+    padding:50px 0 10px;
+}
+article section{
+    width:90%;
+    margin:10px auto 0;
+    background:#fff;
+    box-shadow: 0 0 1px 1px #ccc;
+    border-radius:5px;
+    padding:5px;
+}
+article section .userImg{
+   width:30%;
+}
+article section .userInfo{
+    width:70%;
+    text-indent: 24px;
+}
+article section .userInfo p{
+    margin-top:5px;
+}
+article section .userInfo p b{
+    font-weight: normal;
+}
+article section.btn-list{
+    padding:0;
+}
+article section a{
+    width:100%;
+    height:36px;
+    line-height: 36px;
+    border-bottom:1px solid #ccc;
+    display: inline-block;
+    text-indent: 24px;
+    /*text-align: center;*/
+    background: url("../images/goforword.png") right center no-repeat;
+    background-size: 25px;
+}
+article section a:last-child{
+    border-bottom: 0;
+}

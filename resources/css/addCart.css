@@ -75,12 +75,10 @@ body{
 }
 
 article{
-    padding:5px 15px 15px;
-    margin-top: 15px;
+    padding:65px 15px 20px;
     font-size: 14px;
 }
 article section:nth-child(1){
-    margin-top:50px;
     border:1px solid #ccc;
     border-radius:5px;
     background: #fff;
