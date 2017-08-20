@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no">
+    <title>新智达微商城</title>
+    <link rel="icon" href="resources/images/haoroomsicon.jpg">
+    <link rel="apple-touch-icon-precomposed" href="resources/images/haoroomsicon.jpg">
+    <link rel="apple-touch-startup-image" href="resources/images/haoroomsicon.jpg">
+    <link rel="stylesheet" href="resources/css/reset.css">
+    <link rel="stylesheet" href="resources/css/common.css">
+    <link rel="stylesheet" href="resources/css/orderDetail.css">
+</head>
+<body>
+<header class="header">
+    <ul>
+        <li><a href="index.html"></a></li>
+        <li><a href="userInfo.html"></a></li>
+        <li><a href="cart.html"></a></li>
+        <li><a href="productList.html"></a></li>
+    </ul>
+</header>
+<nav class="clearfix">
+    <img class="float_left" src="resources/images/morenhead.jpg" alt="用户头像">
+    <div class="float_left userInfo">
+        <span class="name">詹莎莎</span>
+        <span>我的订单</span>
+    </div>
+</nav>
+<ul class="tabNav clearfix">
+    <li><a data-link="#fukuan">待付款</a></li>
+    <li><a data-link="#fahuo">待发货</a></li>
+    <li><a data-link="#shouhuo">待收货</a></li>
+    <li><a data-link="#finshed">完成</a></li>
+</ul>
+<article id="order" class="pb10">
+    <section class="textIndent12 orderDetail">
+        <h3>订单详情</h3>
+        <p class="mt10"><span>订单状态</span><span class="ml10">待发货</span></p>
+        <p class="mt10"><span>订单号</span><span class="ml10">201406091022451527</span></p>
+        <p class="mt10 mb10"><span>下单时间</span><span class="ml10">2017-08-09 10:22:00</span></p>
+    </section>
+    <section class="textIndent12 productDetail">
+        <h3>商品详情</h3>
+        <div class="mt10 clearfix">
+            <img class="ml10 float_left" src="resources/images/product1.png" alt="产品缩略图">
+            <div class="textIndent12 float_left">
+                <h3>华为mate7手机</h3>
+                <p class="mt10">
+                    数量：<b class="num red" id="num1">3</b>
+                    价格:<b class="red">&yen;2000.00</b>
+                </p>
+            </div>
+        </div>
+        <div class="mt10 clearfix">
+            <img class="ml10 float_left" src="resources/images/product1.png" alt="产品缩略图">
+            <div class="textIndent12 float_left">
+                <h3>华为mate7手机</h3>
+                <p class="mt10">
+                    数量：<b class="num red" id="num2">3</b>
+                    价格:<b class="red">&yen;2000.00</b>
+                </p>
+            </div>
+        </div>
+        <p class="sum mt10 mb10">
+            <span>总价:</span>
+            <b class="red">&yen;500.00</b>
+        </p>
+        <div class="mt10 piao">
+            <p>发票类型：<span class="type">普通发票</span></p>
+            <p class="mt10 mb10">发票抬头：<span class="taitou">上海兴安得力有限公司</span></p>
+        </div>
+        <div class="mt10 money noborder">
+            <p>付款方式：<span class="type">货到付款</span></p>
+            <p class="mt10 mb10">下单时间：<span class="time">2017-08-10 10:20:21</span></p>
+        </div>
+    </section>
+    <section id="wuliu" class="wuliu textIndent12">
+        <h3>物流信息</h3>
+        <p class="mt10 mb10">收货地址：<span class="name">李煜</span><span class="tel">15788888888</span>, <span class="address">河南省郑州市花园路108号</span></p>
+    </section>
+</article>
+<article id="fukuan" class="fukuan pb10 hide">
+    <section class="noFukuan hide">
+        <div class="textCenter nullOrder mt15 ccc">
+            <img class="width" src="resources/images/cart_pic.png" alt="空购物车">
+            <h3 class="mt10">亲、目前没有订单信息！</h3>
+        </div>
+    </section>
+    <section>
+        <h3 class="textIndent12 noborder normal">订单号:<span>2017081256218767</span></h3>
+        <div class="goodDetail border m10 clearfix">
+            <img class="ml10 float_left" src="resources/images/product1.png" alt="待付款商品详情">
+            <div class="textIndent12 float_left">
+                <p class="mt10">华为mate7手机</p>
+                <p class="mt10">
+                    价格:<b class="red">&yen;2000.00</b>
+                    数量：<b class="num red">3</b>
+                </p>
+            </div>
+        </div>
+        <div class="goodDetail border m10 clearfix">
+            <img class="ml10 float_left" src="resources/images/product1.png" alt="待付款商品详情">
+            <div class="textIndent12 float_left">
+                <p class="mt10">华为mate7手机</p>
+                <p class="mt10">
+                    价格:<b class="red">&yen;2000.00</b>
+                    数量：<b class="num red">3</b>
+                </p>
+            </div>
+        </div>
+        <div class="textIndent12 mb10">
+            <p>添加时间：
+                <span>2017-08-12 11:50:12</span>
+            </p>
+            <p class="mt10">订单总价：
+                <b>&yen;40000.00</b>
+                <span class="red ml10">付款</span>
+                <a class="cancle ml10">取消订单</a>
+                <a class="look ml10">查看订单</a>
+            </p>
+        </div>
+    </section>
+</article>
+<article id="fahuo" class="fahuo pb10 hide">
+    <section class="nullOrder">
+        <div class="textCenter  mt15 ccc">
+            <img class="width" src="resources/images/cart_pic.png" alt="空购物车">
+            <h3 class="mt10">亲、目前没有订单信息！</h3>
+        </div>
+    </section>
+    <section class="order hide">
+        <h3 class="textIndent12 noborder normal">订单号:<span>2017081256218767</span></h3>
+        <div class="goodDetail border m10 clearfix">
+            <img class="ml10 float_left" src="resources/images/product1.png" alt="待付款商品详情">
+            <div class="textIndent12 float_left">
+                <p class="mt10">华为mate7手机</p>
+                <p class="mt10">
+                    价格:<b class="red">&yen;2000.00</b>
+                    数量：<b class="num red">3</b>
+                </p>
+            </div>
+        </div>
+        <div class="goodDetail border m10 clearfix">
+            <img class="ml10 float_left" src="resources/images/product1.png" alt="待付款商品详情">
+            <div class="textIndent12 float_left">
+                <p class="mt10">华为mate7手机</p>
+                <p class="mt10">
+                    价格:<b class="red">&yen;2000.00</b>
+                    数量：<b class="num red">3</b>
+                </p>
+            </div>
+        </div>
+        <div class="textIndent12 mb10">
+            <p>添加时间：
+                <span>2017-08-12 11:50:12</span>
+            </p>
+            <p class="mt10">订单总价：
+                <b>&yen;40000.00</b>
+                <a class="look ml10">查看订单</a>
+            </p>
+        </div>
+    </section>
+</article>
+<article id="shouhuo" class="shouhuo pb10 hide">
+    <section class="order">
+        <h3 class="textIndent12 noborder normal">订单号:<span>2017081256218767</span></h3>
+        <div class="goodDetail border m10 clearfix">
+            <img class="ml10 float_left" src="resources/images/product1.png" alt="待付款商品详情">
+            <div class="textIndent12 float_left">
+                <p class="mt10">华为mate7手机</p>
+                <p class="mt10">
+                    价格:<b class="red">&yen;2000.00</b>
+                    数量：<b class="num red">3</b>
+                </p>
+            </div>
+        </div>
+        <div class="goodDetail border m10 clearfix">
+            <img class="ml10 float_left" src="resources/images/product1.png" alt="待付款商品详情">
+            <div class="textIndent12 float_left">
+                <p class="mt10">华为mate7手机</p>
+                <p class="mt10">
+                    价格:<b class="red">&yen;2000.00</b>
+                    数量：<b class="num red">3</b>
+                </p>
+            </div>
+        </div>
+        <div class="textIndent12 mb10">
+            <p>添加时间：
+                <span>2017-08-12 11:50:12</span>
+            </p>
+            <p class="mt10">订单总价：
+                <b>&yen;40000.00</b>
+                <a class="confirm ml10">确认收货</a>
+                <a class="look ml10">查看订单</a>
+            </p>
+        </div>
+    </section>
+</article>
+<article id="finshed" class="finshed pb10 hide">
+    <section class="order">
+        <h3 class="textIndent12 noborder normal">订单号:<span>2017081256218767</span></h3>
+        <div class="goodDetail border m10 clearfix">
+            <img class="ml10 float_left" src="resources/images/product1.png" alt="待付款商品详情">
+            <div class="textIndent12 float_left">
+                <p class="mt10">华为mate7手机</p>
+                <p class="mt10">
+                    价格:<b class="red">&yen;2000.00</b>
+                    数量：<b class="num red">3</b>
+                </p>
+            </div>
+        </div>
+        <div class="goodDetail border m10 clearfix">
+            <img class="ml10 float_left" src="resources/images/product1.png" alt="待付款商品详情">
+            <div class="textIndent12 float_left">
+                <p class="mt10">华为mate7手机</p>
+                <p class="mt10">
+                    价格:<b class="red">&yen;2000.00</b>
+                    数量：<b class="num red">3</b>
+                </p>
+            </div>
+        </div>
+        <div class="textIndent12 mb10">
+            <p>添加时间：
+                <span>2017-08-12 11:50:12</span>
+            </p>
+            <p class="mt10">订单总价：
+                <b>&yen;40000.00</b>
+                <a class="look ml10">查看订单</a>
+            </p>
+        </div>
+    </section>
+</article>
+</body>
+<script src="resources/js/libs/jquery.js"></script>
+<script src="resources/js/views/orderDetail.js"></script>
+</html>

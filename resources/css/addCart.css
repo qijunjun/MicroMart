@@ -1,43 +1,6 @@
 /*头部样式*/
-body{
-    background-color: rgba(0, 0, 0, 0.03);
-}
-.header{
-    width:100%;
-    height:50px;
-    position: fixed;
-    left:0;
-    top:0;
-    z-index: 99999;
-    border-bottom: 1px solid #ccc;
-    background: #fafafa;
-}
-.header ul{
-    width: 95%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-around;
-    border-bottom: solid 1px #B3B3B3;
-}
-.header ul li{
-    width:50px;
-    height:50px;
-    overflow: hidden;
-}
-.header ul li a{
-    height:50px;
-    display: block;
-}
 .header ul li:nth-child(1) a{
     background: url("../images/icon.png") 0 -46px no-repeat;
-    background-size: 214px auto;
-}
-.header ul li:nth-child(4) a{
-    background: url("../images/icon.png") -101px 0 no-repeat;
-    background-size: 214px auto;
-}
-.header ul li:nth-child(2) a{
-    background: url("../images/icon.png") -161px -46px no-repeat;
     background-size: 214px auto;
 }
 .header ul li:nth-child(3){
@@ -71,12 +34,7 @@ body{
     border: solid 2px #e54144;
     overflow: hidden;
     position: absolute;
-    z-index: 9999;
-}
-
-article{
-    padding:65px 15px 20px;
-    font-size: 14px;
+    z-index: 9999999999;
 }
 article section:nth-child(1){
     border:1px solid #ccc;
@@ -166,15 +124,15 @@ article section:nth-child(2){
     margin-top:15px;
 }
 section .content{
-    background:rgba(215, 212, 212, 0.4);
+    background:rgba(219, 216, 216, 0.5);;
     text-indent: 12px;
-    color:#c2c2c2;
+    color: #575555;
     box-shadow: 0 0 1px 1px #ccc;
     border-radius: 5px;
     margin-bottom: 40px;
 }
 section .content h3{
-    color: #c2c2c2;
+    color: #e30505;;
     font-size: 16px;
     padding-top:15px;
 }
@@ -192,7 +150,6 @@ section button.addBtn{
     width:100%;
     height:40px;
     line-height: 40px;
-    margin-top:10px;
     border:0;
     background:#28c728;
     border-radius: 5px;

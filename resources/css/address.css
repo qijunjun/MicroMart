@@ -6,20 +6,6 @@
     background: url("../images/icon.png") -51px 0 no-repeat;
     background-size: 214px auto;
 }
-article{
-    background: #f6f6f6;
-    color:#444;
-    min-height: 300px;
-    padding:50px 0 60px;
-}
-article section{
-    width:90%;
-    margin:10px auto 0;
-    background:#fff;
-    box-shadow: 0 0 1px 1px #ccc;
-    border-radius:5px;
-    padding:5px;
-}
 article section  form{
     padding:15px;
 }
@@ -53,6 +39,7 @@ article form  .btn{
     display: block;
     margin-top:15px;
     background: linear-gradient(#1aa818,#87cc09);
+    cursor: pointer;
 }
 article section.add-address{
     padding:5px 0 0;
@@ -60,6 +47,9 @@ article section.add-address{
 article section > p{
     margin-top:10px;
     text-indent: 20px;
+}
+article section > p >span{
+    margin-left:5px;
 }
 article section span.error{
     margin-top:10px;
@@ -83,6 +73,7 @@ article section >div a{
     display: inline-block;
     text-align: center;
     text-indent: 50px;
+    cursor: pointer;
 }
 article section > div a.edit{
     background: url("../images/edit.png") center center no-repeat;

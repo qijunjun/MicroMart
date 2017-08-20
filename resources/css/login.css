@@ -1,0 +1,36 @@
+body,article.mui-content{
+    background: #fafafa;
+}
+.mui-input-row label~input{
+    height:50px;
+    line-height: 50px;
+}
+.mui-input-group .mui-input-row{
+    height:auto;
+}
+.account{
+    background: url("../images/head_gray.png") 15px center no-repeat;
+    background-size: contain;
+    height:30px;
+}
+.pwd{
+    background: url("../images/uc_logging_password.png") 15px center no-repeat;
+    background-size: contain;
+    height:30px;
+}
+.mui-input-row label{
+    width:20%;
+}
+article .mui-input-row input{
+    width:80%;
+}
+.mui-input-row label~input{
+    float: left;
+}
+.mui-btn-block{
+    margin-top:15px;
+    margin-bottom: 15px;
+}
+.error{
+    color: #ff0000;
+}

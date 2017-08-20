@@ -12,20 +12,19 @@
     <link rel="apple-touch-icon-precomposed" href="resources/images/haoroomsicon.jpg">
     <link rel="apple-touch-startup-image" href="resources/images/haoroomsicon.jpg">
     <link rel="stylesheet" href="resources/css/reset.css">
-    <link rel="stylesheet" href="resources/css/swiper.min.css">
-    <link rel="stylesheet" href="resources/css/header.css">
+    <link rel="stylesheet" href="resources/css/common.css">
     <link rel="stylesheet" href="resources/css/address.css">
 </head>
 <body>
 <header class="header">
     <ul>
         <li><a href="index.html"></a></li>
-        <li><a href="javascript:void(0)"></a></li>
+        <li><a href="userInfo.html"></a></li>
         <li><a href="cart.html"></a></li>
         <li><a href="productList.html"></a></li>
     </ul>
 </header>
-<article>
+<article id="address">
     <section class="addresslist">
         <form>
             <div class="form-group">
@@ -33,14 +32,18 @@
                 <span class="error">姓名不能为空</span>
             </div>
             <div class="form-group">
-                <label for="city"></label>
-                <select name="province" id="province"></select>
+                <select name="province" id="province">
+                    <option value="0" disabled="disabled" selected>--请选择省份--</option>
+                </select>
                 <select name="city" id="city">
                     <option value="0" disabled="disabled" selected>--请选择城市--</option>
                 </select>
                 <select name="xian" id="xian">
                     <option value="0" disabled="disabled" selected>--请选择地区--</option>
                 </select>
+                <span class="error provinceError">请选择省份</span>
+                <span class="error cityError">请选择城市</span>
+                <span class="error districtError">请选择地区</span>
             </div>
             <div class="form-group">
                 <input type="text" id="addressDetial" placeholder="详细地址(不必重复填写地区)">
@@ -56,13 +59,29 @@
     <section class="add-address">
         <p>
             <span class="name">张三</span>
-            <span>(<b class="tel">15788888888888</b>)</span>
+            <span>(<b class="tel">15788888888</b>)</span>
         </p>
         <p>
-            <span class="province">河南省</span>
-            <span class="city">郑州市</span>
-            <span class="district">金水区</span>
+            <span class="province" data-selectIndex="15" data-id="1656">河南省</span>
+            <span class="city" data-selectIndex="0" data-id="1657">郑州市</span>
+            <span class="district" data-selectIndex="5" data-id="1662">金水区</span>
             <span class="detailAddress">花园路108号</span>
+        </p>
+        <div>
+            <a class="edit">编辑</a>
+            <a class="del">删除</a>
+        </div>
+    </section>
+    <section class="add-address">
+        <p>
+            <span class="name">李煜</span>
+            <span>(<b class="tel">15766666662</b>)</span>
+        </p>
+        <p>
+            <span class="province" data-selectIndex="15" data-id="1656">河南省</span>
+            <span class="city" data-selectIndex="0" data-id="1657">郑州市</span>
+            <span class="district" data-selectIndex="5" data-id="1660">二七区</span>
+            <span class="detailAddress">平原路108号</span>
         </p>
         <div>
             <a class="edit">编辑</a>

@@ -1,0 +1,111 @@
+.header ul li:nth-child(1) a{
+    background: url("../images/icon.png") 0 -46px no-repeat;
+    background-size: 214px auto;
+}
+.header ul li:nth-child(4) a{
+    background: url("../images/icon.png") -101px 0 no-repeat;
+    background-size: 214px auto;
+}
+nav{
+    margin-top:50px;
+    padding:25px 20px;
+    background: linear-gradient(#f34, #FD8C84);
+}
+nav img{
+    width:50px;
+    height:50px;
+    border-radius: 30px;
+}
+nav .userInfo{
+    margin-left:10px;
+}
+nav .userInfo span{
+    display: block;
+}
+nav .userInfo span.name{
+    color: #fff;
+}
+nav .userInfo span:last-child{
+    margin-top:10px;
+    color:#f8cd71;
+}
+article{
+    padding:0;
+}
+.tabNav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #f2f2f2;;
+    height:44px;
+    line-height: 44px;
+    border-right:1px solid #ccc;
+}
+.tabNav li{
+    width:25%;
+    text-align: center;
+    background: #f2f2f2;
+    border-left:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+}
+.tabNav li a{
+    width: 100%;
+    display: inline-block;
+    cursor: pointer;
+}
+.tabNav li.active{
+    background: #f6f6f6;
+    border-bottom: none;
+}
+article section{
+    width:95%;
+}
+article section.orderDetail,article section.productDetail{
+    padding: 5px 0;
+}
+article section h3,article div h3{
+    font-size:16px;
+    margin-top:5px;
+}
+article section.orderDetail>p span:first-child{
+    width:70px;
+    display: inline-block;
+}
+article section.productDetail>div{
+    border-bottom: 1px dashed #ccc;
+}
+article section.productDetail>div.money{
+    border: none;
+}
+article section>div img{
+    width:20%;
+}
+article section>div img.width{
+    width: auto;
+}
+article section.productDetail>div >div{
+    width:70%;
+}
+.red{
+    color: #f34;
+}
+/*待付款页面样式*/
+.fukuan section,.fahuo section,.shouhuo section,.finshed section{
+    background:linear-gradient(#fff,#ddd);
+}
+.goodDetail{
+    border-radius:5px;
+}
+.fukuan section.noFukuan,.fahuo section:first-child{
+    background: #f6f6f6;
+    border:none;
+    border-radius: 0;
+    box-shadow: none;
+}
+/*待发货页面样式*/
+.fahuo section.nullOrder{
+    background: #f6f6f6;
+}
+.look,.cancle{
+    cursor: pointer;
+}
